@@ -16,11 +16,11 @@
 
 # Atividade-2-P1-Probabilidade-e-Estat-stica
 
-📊 Análise Estatística com Python – Quartis, IQR e Outliers
+## 📊 Análise Estatística com Python – Quartis, IQR e Outliers
 
 Este projeto aplica estatística descritiva em Python para calcular quartis, intervalo interquartil (IQR), limites superior e inferior e identificar outliers em um conjunto de dados. Além disso, são utilizadas visualizações gráficas para interpretar melhor os resultados.
 
-🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 Python 3
 
@@ -36,7 +36,7 @@ Matplotlib
 Seaborn
  – gráficos estatísticos
 
-🔢 Conjunto de Dados
+## 🔢 Conjunto de Dados
 
 As notas analisadas foram:
 
@@ -44,7 +44,7 @@ As notas analisadas foram:
 [4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8]
 ```
 
-📌 Etapas da Análise
+## 📌 Etapas da Análise
 
 Amplitude → diferença entre o maior e o menor valor.
 
@@ -66,7 +66,7 @@ Boxplot → exibe quartis e outliers.
 
 Histograma → mostra a distribuição dos dados.
 
-📈 Resultados
+## 📈 Resultados
 
 Q1 (1º quartil): 5.0
 
@@ -82,7 +82,7 @@ Limite superior: 10.0
 
 Outliers: Nenhum
 
-📊 Visualizações
+## 📊 Visualizações
 Boxplot
 
 Mostra a mediana, quartis e possíveis outliers.
@@ -93,12 +93,12 @@ Mostra a distribuição das frequências das notas.
 
 (as imagens são geradas automaticamente no notebook)
 
-📝 Conclusão
+## 📝 Conclusão
 
 Este projeto demonstrou como aplicar conceitos básicos de estatística descritiva com Python, identificando medidas de posição e dispersão.
 As visualizações ajudaram a confirmar a ausência de outliers e a compreender a distribuição dos dados.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 ```bash
 📦 analise-estatistica
  ┣ 📜 Atividade_2_P1.ipynb   # Notebook principal
@@ -107,7 +107,7 @@ As visualizações ajudaram a confirmar a ausência de outliers e a compreender 
 
 
 
-👤 Autor
+## 👤 Autor
 
 Nome: Matheus Beiruth
 
