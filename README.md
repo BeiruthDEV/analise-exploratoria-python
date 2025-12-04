@@ -14,101 +14,65 @@
 
 ---
 
-# Atividade-2-P1-Probabilidade-e-Estat-stica
+# Statistical Analysis & Outlier Detection 📊
 
-## 📊 Análise Estatística com Python – Quartis, IQR e Outliers
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Libraries](https://img.shields.io/badge/Pandas-NumPy-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-Este projeto aplica estatística descritiva em Python para calcular quartis, intervalo interquartil (IQR), limites superior e inferior e identificar outliers em um conjunto de dados. Além disso, são utilizadas visualizações gráficas para interpretar melhor os resultados.
+## 📋 Project Overview
+Este projeto implementa um pipeline de **Estatística Descritiva** em Python focado na caracterização da distribuição de dados e na detecção de anomalias (*outliers*). Utilizando o método do Intervalo Interquartil (IQR), o script calcula medidas de tendência central e dispersão, definindo limites estatísticos para validar a integridade do conjunto de dados.
 
-## 🚀 Tecnologias utilizadas
+O objetivo é demonstrar a aplicação prática de conceitos fundamentais de análise de dados para a tomada de decisão baseada em estatística.
 
-Python 3
+## 🛠️ Tech Stack
+* **Linguagem:** Python 3
+* **Computação Numérica:** NumPy (cálculo de percentis e arrays)
+* **Manipulação de Dados:** Pandas
+* **Visualização de Dados:** Matplotlib & Seaborn (Boxplots e Histogramas)
 
-NumPy
- – manipulação numérica
+## ⚙️ Metodologia
+A análise segue um fluxo estruturado para garantir a robustez dos resultados:
 
-Pandas
- – apoio na análise
+1.  **Definição do Dataset:** Análise de um vetor de notas variando de 4 a 8.
+2.  **Cálculo de Quartis:** Determinação de Q1 (25%), Q2 (Mediana) e Q3 (75%).
+3.  **Cálculo do IQR:** Mensuração da dispersão central ($IQR = Q3 - Q1$).
+4.  **Definição de Limites (Fences):**
+    * *Lower Fence:* $Q1 - 1.5 \times IQR$
+    * *Upper Fence:* $Q3 + 1.5 \times IQR$
+5.  **Identificação de Outliers:** Filtragem de pontos de dados fora dos limites estabelecidos.
+6.  **Visualização:** Geração de Boxplot para visualização de simetria e dispersão.
 
-Matplotlib
- – visualizações
+## 📊 Key Findings (Resultados)
 
-Seaborn
- – gráficos estatísticos
+| Medida | Valor Calculado |
+| :--- | :--- |
+| **1º Quartil (Q1)** | 5.0 |
+| **Mediana (Q2)** | 6.0 |
+| **3º Quartil (Q3)** | 7.0 |
+| **Amplitude Interquartil (IQR)** | 2.0 |
+| **Limite Inferior** | 2.0 |
+| **Limite Superior** | 10.0 |
 
-## 🔢 Conjunto de Dados
+> **Conclusão da Análise:** Com base nos limites calculados (2.0 a 10.0), **nenhum outlier foi detectado** no conjunto de dados atual, indicando uma distribuição de notas consistente e sem anomalias extremas.
 
-As notas analisadas foram:
+## 📈 Visualizações
 
-```bash
-[4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8]
-```
+O projeto gera automaticamente:
+* **Boxplot:** Para validação visual da distribuição dos quartis e ausência de *outliers*.
+* **Histograma:** Para análise da frequência e formato da distribuição dos dados.
 
-## 📌 Etapas da Análise
+## 🚀 How to Run
 
-Amplitude → diferença entre o maior e o menor valor.
+1.  Clone este repositório:
+    ```bash
+    git clone [https://github.com/BeiruthDEV/estatistica-descritiva-outliers.git](https://github.com/BeiruthDEV/estatistica-descritiva-outliers.git)
+    ```
+2.  Instale as dependências necessárias:
+    ```bash
+    pip install numpy pandas matplotlib seaborn
+    ```
+3.  Execute o notebook `Atividade_2_P1.ipynb` em um ambiente Jupyter ou Google Colab.
 
-Quartis (Q1, Q2, Q3) → obtidos com numpy.percentile.
-
-IQR (Intervalo Interquartil) → IQR = Q3 - Q1.
-
-Limites para Outliers:
-
-Limite inferior = Q1 - 1.5 × IQR
-
-Limite superior = Q3 + 1.5 × IQR
-
-Identificação de Outliers → valores fora do intervalo.
-
-Visualizações:
-
-Boxplot → exibe quartis e outliers.
-
-Histograma → mostra a distribuição dos dados.
-
-## 📈 Resultados
-
-Q1 (1º quartil): 5.0
-
-Q2 (mediana): 6.0
-
-Q3 (3º quartil): 7.0
-
-IQR: 2.0
-
-Limite inferior: 2.0
-
-Limite superior: 10.0
-
-Outliers: Nenhum
-
-## 📊 Visualizações
-Boxplot
-
-Mostra a mediana, quartis e possíveis outliers.
-
-Histograma
-
-Mostra a distribuição das frequências das notas.
-
-(as imagens são geradas automaticamente no notebook)
-
-## 📝 Conclusão
-
-Este projeto demonstrou como aplicar conceitos básicos de estatística descritiva com Python, identificando medidas de posição e dispersão.
-As visualizações ajudaram a confirmar a ausência de outliers e a compreender a distribuição dos dados.
-
-## 📂 Estrutura do Projeto
-```bash
-📦 analise-estatistica
- ┣ 📜 Atividade_2_P1.ipynb   # Notebook principal
- ┣ 📜 README.md              # Documentação do projeto
-```
-
-
-
-## 👤 Autor
-
-Nome: Matheus Beiruth
-
-Contato: matheusbeiruth10@gmail.com
+---
+*Desenvolvido por Matheus Beiruth como parte do portfólio de Análise de Dados.*
